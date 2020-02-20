@@ -12,9 +12,58 @@
 <script type="text/javascript" 
         src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
 </script>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
 
 <body>
+
+<div class="sidenav">
+	<a href="index.html" data-prefetch="true" rel="external">Home</a>
+  <a href="find.html" data-prefetch="true" rel="external">Find Us</a>
+  <a href="rooms.html" data-prefetch="true" rel="external">Our Rooms</a>
+  <a href="ammenities.html" data-prefetch="true" rel="external">Ammenities</a>
+  <a href="services.html" data-prefetch="true" rel="external">Services</a>
+  <a href="contact.html" data-prefetch="true" rel="external">Contact Us</a>
+</div>
 
 <div data-role="page">
 
@@ -24,6 +73,7 @@
 	
 	
 	<div role="main" class="ui-content">
+	<div class="main">
 
 		<p>
 			The Camden Hotel a variety of ammenities to suit its hotel guests and make them feel comfortable during their
@@ -33,15 +83,46 @@
 		<p>
 		<ul>
 		<li>Mini Fridge</li>
+		<li>Microwave</li>
+		<li>Flat-screen TV</li>
 		<li>Luxury Soaps & Shampoos</li>
 		<li>Turn-Down Service</li>
+		<li>Room Service</li>
 		</ul>
 		</p>
+		
+		<p>		
+		<center>
+		<div class="w3-content w3-display-container">
+		<img class="mySlides" src="tv.jpg" style="width:25%">
+		<img class="mySlides" src="soaps.jpg" style="width:25%">
+		<img class="mySlides" src="turndownservice.jpg" style="width:25%">
+		<img class="mySlides" src="roomservice.jpg" style="width:25%">
+
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</center>
 
 		
 	</div>
 
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>&copy; Camden Hotel 2012</h4>
 	</div>
 		
