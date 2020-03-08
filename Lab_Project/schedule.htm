@@ -7,8 +7,8 @@ Title: Moving Planner
 Use: Schedule Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 2/29/2020
-Tested: 2/29/2020; Passed with no problems.
+Developed: 3/7/2020
+Tested: 3/7/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,15 +27,46 @@ Tested: 2/29/2020; Passed with no problems.
 	<div data-role="header"><h1>Schedule Page</h1></div>
 
 	<div role="main" class="ui-content">
-	<p>
-	This page will contain information on what is
-	needed to create a schedule for the move, such as what items need to be done in a
-	specific order. Dates should not be used on this page.
-	</p>
 	
-	<p>
-	You can also <a href="#aboutPage">learn more</a> about Megacorp.
-	</p>
+		<!-- #6 Adding schedule table -->
+		<table data-role="table" id="table1" data-mode="reflow">
+					<thead>
+						<tr>
+							<th>Step</th>
+							<th>Event</th>
+							<th>Time Frame</th>
+						</tr>
+				</thead>
+					<tbody>
+						<tr>
+							<th>First</th>
+							<td>Notify landlord</td>
+							<td>One day</td>
+						</tr>		
+						<tr>
+							<th>Second</th>
+							<td>Hire moving company</td>
+							<td>One day</td>
+					</tr>		
+					<tr>
+							<th>Third</th>
+							<td>Notify all businesses & personnel</td>
+							<td>Two weeks</td>
+						</tr>		
+						<tr>
+							<th>Fourth</th>
+							<td>Pack belongings</td>
+							<td>Three weeks</td>
+						</tr>
+						<tr>
+							<th>Fifth</th>
+							<td>Prepare rental (repairs & cleaning)</td>
+							<td>One week</td>
+						</tr>						
+					</tbody>
+				</table>
+
+			</div>
 	</div>
 	
 	

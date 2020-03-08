@@ -7,8 +7,8 @@ Title: Moving Planner
 Use: Repairs Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 2/29/2020
-Tested: 2/29/2020; Passed with no problems.
+Developed: 3/7/2020
+Tested: 3/7/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,19 +23,47 @@ Tested: 2/29/2020; Passed with no problems.
 
 <div data-role="page" id="repairsPage" data-title="Repairs and Cleaning Page">
 
+	<!-- #3 Added hiding panel -->
+	<div data-role="panel" id="leftCleaningPanel" data-display="overlay">
+		<p>
+		<ol><h2>Cleaning List</h2>
+		<li>Wipe down all surfaces (walls, baseboards, molding, doors, etc)</li>
+		<li>Wipe down all kitchen cabinets (inside, outside, & top) & drawers</li>
+		<li>Ensure stove and oven are cleaned</li>
+		<li>Clean all bathrooms (sink, mirrors, tub, etc.)</li>
+		<li>Wipe down washer & dryer (inside & outside)</li>
+		<li>Make sure air intake vent is cleaned and filter replaced</li>
+		<li>Vaccum carpet and/or sweep & mop floors</li>
+		<li>Ensure all belongings and trash are removed from location</li>
+		<li>Check to ensure outside premises is acceptable (yard mowed if required, no trash in yard, etc.)</li>
+		</ol>
+		
+		<p>
+			<a data-role="button" data-rel="close">Close</a>
+		</p>
+	</div>
 
 	<div data-role="header"><h1>Repairs and Cleaning Page</h1></div>
 
 	<div role="main" class="ui-content">
-	<p>
-	This page will contain a short list of the
-	types of repairs and moving out cleaning needs that needs to be considered prior to a
-	move.
-	</p>
-	
-	<p>
-	You can also <a href="#aboutPage">learn more</a> about Megacorp.
-	</p>
+		<p>
+			You can always ask your landlord for a list of moving out repairs and a cleaning list to complete before leaving your rental place. 
+			Many larger rental companies will contain these lists in your lease agreement so you should always refer
+			back to that before completing anything on your own.<br><br>
+			
+			Here is a list of common repairs to complete before moving out of a rental home:<br>
+			<ul>
+			<li>Replace any cabinetry door knobs that may have been removed or broken off</li>
+			<li>Replace any light bulbs no longer working</li>
+			<li>Try and repair any scuffs in the walls</li>
+			<li>Attempt to repair any scratching or scuffs in wood flooring</li>
+			<li>Plaster any holes in walls from nails or other forms of hanging (check with landlord before completing this task)</li>
+			</ul>
+			<br>
+			
+			You can find a list of common cleaning tasks to complete before moving out by clicking the following button.
+			<a href="#leftCleaningPanel" data-role="button">Cleaning List</a>
+		</p>
 	</div>
 	
 	

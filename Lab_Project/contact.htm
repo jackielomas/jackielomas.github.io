@@ -7,8 +7,8 @@ Title: Moving Planner
 Use: Contact Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 2/29/2020
-Tested: 2/29/2020; Passed with no problems.
+Developed: 3/7/2020
+Tested: 3/7/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,7 @@ Tested: 2/29/2020; Passed with no problems.
 
 	<div role="main" class="ui-content">
 	<p>
-		<!-- #2 Added a contact form -->
+
 		<form action="echo.html" method="post">
 			<div class="ui-field-contain">
 				<label for="name">Name</label>
@@ -52,9 +52,14 @@ Tested: 2/29/2020; Passed with no problems.
 		</form>
 	</p>
 	
-	<p>
-	You can also <a href="#aboutPage">learn more</a> about Megacorp.
-	</p>
+	<!-- #7 Added pop up -->
+		<a href="#instructionPopup" data-role="button" data-rel="popup" data-position-to="window">Instructions</a>
+	</div>
+	
+	<div data-role="popup" id="instructionPopup" data-dismissible="false" class="ui-content">
+    <p><center>To contact us, simply fill out every field completely<br>
+	and hit the "Send" button.</center></p>
+    <a href="" data-rel="back" data-theme="b" data-role="button">Close</a>
 	</div>
 	
 	

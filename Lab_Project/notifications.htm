@@ -7,8 +7,8 @@ Title: Moving Planner
 Use: Notifications Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 2/29/2020
-Tested: 2/29/2020; Passed with no problems.
+Developed: 3/7/2020
+Tested: 3/7/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,14 +27,44 @@ Tested: 2/29/2020; Passed with no problems.
 	<div data-role="header"><h1>Notifications Page</h1></div>
 
 	<div role="main" class="ui-content">
-	<p>
-	This page will contain a short list of the
-	individuals and organizations that will need to be notified of the move.
-	</p>
-	
-	<p>
-	You can also <a href="#aboutPage">learn more</a> about Megacorp.
-	</p>
+
+		<!-- #4 implement tab widget -->
+		<div data-role="tabs">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#tab1">Business</a></li>
+				<li><a href="#tab2">Personal</a></li>
+			</ul>
+			</div>
+			
+			<div id="tab1">
+				<p>
+				These are all professional/business locations that will need to be made aware of your moving.
+				<ul>
+				<li>Water facility</li>
+				<li>Gas facility</li>
+				<li>Garbage/Waste disposal</li>
+				<li>Electric Company</li>
+				<li>Telephone/cellphone company</li>
+				<li>Internet company</li>
+				<li>Source of income (employer, SSI, SSID, VA, etc.)</li>
+				<li>Any other bills (credit cards, loans, car payments, etc.)</li>
+				<li>Banks</li>
+				</ul>
+				</p>
+			</div>
+
+			<div id="tab2">
+				<p>
+				Personal tab to add personal awareness?
+				<ul>
+				<li>Parents?</li>
+				<li>Children?</li>
+				<li>Other family members?</li>
+				</ul>
+				</p>
+			</div>
+			
 	</div>
 	
 	
