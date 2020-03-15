@@ -16,6 +16,7 @@ Tested: 3/7/2020; Passed with no problems.
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/application.js"></script>
 </head>
 
 <body>
@@ -36,6 +37,27 @@ Tested: 3/7/2020; Passed with no problems.
 	<p>
 	You can also <a href="#aboutPage">learn more</a> about Megacorp.
 	</p>
+	<form>
+			<div class="ui-field-contain">
+				<input id="title" type="text" placeholder="Add a note" />
+			</div>
+			<div class="ui-field-contain">
+				<textarea id="note" placeholder="The content of your note">
+				</textarea>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<input id="btnNoThanks" type="submit" value="No Thanks" />
+				</div>
+				<div class="ui-block-b">
+					<input id="btnAddNote" type="button" value="Add Note" />
+				</div>
+			</div>
+		</form>
+
+		<ul id="notesList" data-role="listview" data-inset="true"></ul>
+	</div>
+	
 	</div>
 	
 	
