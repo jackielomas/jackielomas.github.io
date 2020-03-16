@@ -7,8 +7,8 @@ Title: Moving Planner
 Use: Add Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 3/7/2020
-Tested: 3/7/2020; Passed with no problems.
+Developed: 3/13/2020
+Tested: 3/15/2020; Errors.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,15 +29,9 @@ Tested: 3/7/2020; Passed with no problems.
 
 	<div role="main" class="ui-content">
 	<p>
-	This page will contain a short form that has two fields,
-	item title and planning item, along with a save button to save the item. A button will be
-	provided to return to the Display Items Page.
-	</p>
 	
-	<p>
-	You can also <a href="#aboutPage">learn more</a> about Megacorp.
-	</p>
-	<form>
+<!-- #4 Added form for notekeeper -->	
+<form>
 			<div class="ui-field-contain">
 				<input id="title" type="text" placeholder="Add a note" />
 			</div>
@@ -54,13 +48,13 @@ Tested: 3/7/2020; Passed with no problems.
 				</div>
 			</div>
 		</form>
+	</p>
+	
 
 		<ul id="notesList" data-role="listview" data-inset="true"></ul>
 	</div>
 	
-	</div>
-	
-	
+
 	<div data-role="footer" data-position="fixed" data-fullscreen="true">
 	<h4>Copyright Megacorp &copy; 2015</h4>
 	<div data-role="navbar">

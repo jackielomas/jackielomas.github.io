@@ -7,8 +7,8 @@ Title: Moving Planner
 Use: Display Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 3/7/2020
-Tested: 3/7/2020; Passed with no problems.
+Developed: 3/13/2020
+Tested: 3/15/2020; Errors.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,7 @@ Tested: 3/7/2020; Passed with no problems.
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/application.js"></script>
 </head>
 
 <body>
@@ -28,15 +29,10 @@ Tested: 3/7/2020; Passed with no problems.
 
 	<div role="main" class="ui-content">
 	<p>
-	This page will display a list of the planning
-	item titles in a list view. When the item is clicked it will open up the item to view. A
-	delete button will then be available to delete the item. When the delete button is
-	clicked, it will delete the item from the page. The Display Items Page will also have a
-	button to take the user to the Add Item Page.
-	</p>
+	Here you will find a list of your schedule.<br>
 	
-	<p>
-	You can also <a href="#aboutPage">learn more</a> about Megacorp.
+	<!-- #3 Create display page -->
+	<ul id="notesList" data-role="listview" data-inset="true"></ul>
 	</p>
 	</div>
 	
