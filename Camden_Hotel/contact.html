@@ -79,14 +79,41 @@ body {
 			<b>Phone:</b> <a href="tel:555-555-5555">555-555-5555</a><br/>
 			<b>Email:</b> <a href="mailto:people@camdenhotel.fake">people@camdenhotel.fake</a>
 		</p>
+		<br>
+		<p>
+			<ul id="theList" data-role="listview" data-inset="true">
+				<li>Test1</li>
+				<li>Test2</li>
+			</ul>
+			
+			<form>
+			<div data-role="fieldcontain">
+				<label for="additem">New Item</label>
+				<input type="text" name="additem" value="" />
+		</p>
 				
 	</div>
 
 	<div data-role="footer" data-position="fixed">
-		<h4>&copy; Camden Hotel 2016</h4>
+		<h4>&copy; Camden Hotel 2016</h4><br>
+		<p id="status"></p>
 	</div>
 		
 </div>
+
+<script>
+$("#testBtn").click(function() {
+	var itemToAdd = $.trim($("#additem").val());
+	if(itemToAdd == "") return;
+	$("theList").append("<li>"+itemToAdd+"</li>");
+	});
+</script>
+
+<script>
+$(window).bind("orientationchange", function(e, type) {
+	$("#status").html("Orientation changed to "+e.orientation);
+	});
+</script>
 
 </body>
 </html>

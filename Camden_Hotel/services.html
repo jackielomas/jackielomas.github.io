@@ -121,10 +121,17 @@ function carousel() {
 </div>
 
 	<div data-role="footer" data-position="fixed">
-		<h4>&copy; Camden Hotel 2012</h4>
+		<h4>&copy; Camden Hotel 2012</h4><br>
+		<p id="status"></p>
 	</div>
 		
 </div>
+
+<script>
+$(window).bind("orientationchange", function(e, type) {
+	$("#status").html("Orientation changed to "+e.orientation);
+	});
+</script>
 
 </body>
 </html>
