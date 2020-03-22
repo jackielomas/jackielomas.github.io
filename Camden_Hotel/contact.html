@@ -81,6 +81,7 @@ body {
 		</p>
 		<br>
 		<p>
+			Suggestions:<br>
 			<ul id="theList" data-role="listview" data-inset="true">
 				<li>Test1</li>
 				<li>Test2</li>
@@ -109,7 +110,7 @@ body {
 $("#testBtn").click(function() {
 	var itemToAdd = $.trim($("#additem").val());
 	if(itemToAdd == "") return;
-	$("theList").append("<li>"+itemToAdd+"</li>");
+	$("#theList").append("<li>"+itemToAdd+"</li>");
 	});
 </script>
 
