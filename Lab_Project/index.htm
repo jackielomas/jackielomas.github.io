@@ -7,8 +7,8 @@ Title: Moving Planner
 Use: Hosting Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 3/13/2020
-Tested: 3/07/2020; Passed with no problems.
+Developed: 3/24/2020
+Tested: 3/24/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,11 +24,14 @@ Tested: 3/07/2020; Passed with no problems.
 <div data-role="page" id="homePage" data-title="Home Page">
 
 
-	<div data-role="header"><h1>Welcome</h1></div>
+	<div data-role="header">
+	<a href="about.htm" data-prefetch="true" data-transition="pop" rel="external">About Us</a>
+	<h1>Welcome</h1>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a>
+	</div>
 
 	<div role="main" class="ui-content">
 	
-	<!-- #2 Adding grid to page information -->
 	<div class="ui-grid-a">
 		<div class="ui-block-a">
 		<p>
@@ -45,8 +48,6 @@ Tested: 3/07/2020; Passed with no problems.
 				This web application has a very simplistic design so using it makes it a breeze. You can simply navigate throughout
 				the instruction pages my clicking "Next" or "Previous". Every page also has an option to return back to the home page.
 				You can also navigate to an "About Me" page or a "Contact Us" page.
-				
-				Testing <a href="notekeeper.html" rel="external">Notekeeper</a>
 			</p>
 		</div>
 		</div>
@@ -58,15 +59,13 @@ Tested: 3/07/2020; Passed with no problems.
 	</div>
 	
 	<div data-role="footer" data-position="fixed" data-fullscreen="true">
-	<h4>Copyright Megacorp &copy; 2015</h4>
 	<div data-role="navbar">
 		<ul>
-			<li><a href="about.htm" data-prefetch="true" data-transition="pop" rel="external">About</a></li>
 			<li><a href="instructions.htm" data-prefetch="true" data-transition="flip" rel="external">Instructions</a></li>
 			<li><a href="planner.htm" data-prefetch="true" data-transition="pop" rel="external">Planner</a></li>
-			<li><a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a></li>
 		</ul>
-	</div>	
+	</div>
+	<h4>Moving Helper &copy; 2020</h4>	
 </div>
 </body>
 </html>

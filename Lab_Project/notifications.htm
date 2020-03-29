@@ -7,12 +7,12 @@ Title: Moving Planner
 Use: Notifications Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 3/13/2020
-Tested: 3/13/2020; Passed with no problems.
+Developed: 3/24/2020
+Tested: 3/24/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Notifications Page</title>
+<title>Notifications</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -21,10 +21,14 @@ Tested: 3/13/2020; Passed with no problems.
 <body>
 
 
-<div data-role="page" id="notificationsPage" data-title="Notifications Page">
+<div data-role="page" id="notificationsPage" data-title="Notifications">
 
 
-	<div data-role="header"><h1>Notifications Page</h1></div>
+	<div data-role="header">
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a>
+	<h1>Notifications</h1>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a>
+	</div>
 
 	<div role="main" class="ui-content">
 
@@ -39,7 +43,7 @@ Tested: 3/13/2020; Passed with no problems.
 			
 			<div id="tab1">
 				<p>
-				These are all professional/business locations that will need to be made aware of your moving.
+				Professional/business locations that will need to be made aware of your moving:
 				<ul>
 				<li>Water facility</li>
 				<li>Gas facility</li>
@@ -56,27 +60,31 @@ Tested: 3/13/2020; Passed with no problems.
 
 			<div id="tab2">
 				<p>
-				Personal tab to add personal awareness?
+				Personal contacts you may want to notify of your address change:
 				<ul>
-				<li>Parents?</li>
-				<li>Children?</li>
-				<li>Other family members?</li>
+				<li>Parents</li>
+				<li>Children</li>
+				<li>Other family members</li>
+				<li>Emergency Contacts</li>
 				</ul>
 				</p>
 			</div>
-			
+		</div>
 	</div>
 	
 	
 	<div data-role="footer" data-position="fixed" data-fullscreen="true">
-	<h4>Copyright Megacorp &copy; 2015</h4>
 	<div data-role="navbar">
 		<ul>
-			<li><a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a></li>
-			<li><a href="repairs.htm" data-transition="pop" rel="external">Previous</a></li>
-			<li><a href="utilities.htm" data-transition="pop" rel="external">Next</a></li>
+			<li><a href="instructions.htm" data-prefetch="true" data-transition="pop" rel="external">Instructions</a></li>
+			<li><a href="supplies.htm" data-transition="pop" rel="external">Supplies</a></li>
+			<li><a href="companies.htm" data-transition="pop" rel="external">Companies</a></li>
+			<li><a href="repairs.htm" data-transition="pop" rel="external">Repairs</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Utilities</a></li>
+			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
 		</ul>
 	</div>
-
+	<h4>Moving Helper &copy; 2020</h4>
+</div>
 </body>
 </html>

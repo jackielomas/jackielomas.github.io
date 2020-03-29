@@ -7,12 +7,12 @@ Title: Moving Planner
 Use: Companies Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 3/13/2020
-Tested: 3/13/2020; Passed with no problems.
+Developed: 3/24/2020
+Tested: 3/24/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moving Companies Page</title>
+<title>Moving Companies</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -21,69 +21,66 @@ Tested: 3/13/2020; Passed with no problems.
 <body>
 
 
-<div data-role="page" id="companiesPage" data-title="Moving Companies Page">
+<div data-role="page" id="companiesPage" data-title="Moving Companies">
 
 
-	<div data-role="header"><h1>Moving Companies Page</h1></div>
+	<div data-role="header">
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a>
+	<h1>Moving Supplies</h1>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a>
+	</div>
 
-	<!-- #5 Added collapsible widget --> 
 	<div role="main" class="ui-content">
-		<p>
-		<h1>Moving Companies:</h1><br/>
-		<h3>U-Haul</h3>
-		<h3>Other moving companies(there aren't any)</h3><br>
-		</p>
-		
 		<div data-role="collapsible">
-			<h3>Information</h3>
-
-			<p>
-			<h1>U-Haul</h1>
+			<h3>U-Haul</h3>
 			<ul>
 			<li>Address:551 E North Ave, Flora, IL 62839</li>
 			<li>Phone: (618) 662-8148</li>
 			<li>Hours:</li>
 				<ul>
-				<li>Monday	8AM–4:30PM</li>
-				<li>Tuesday	8AM–4:30PM</li>
-				<li>Wednesday	Closed</li>
-				<li>Thursday	8AM–4:30PM</li>
-				<li>Friday	8AM–4:30PM</li>
-				<li>Saturday	8AM–12PM</li>
-				<li>Sunday	Closed</li>
+				<li>Monday:	8AM–4:30PM</li>
+				<li>Tuesday:	8AM–4:30PM</li>
+				<li>Wednesday:	Closed</li>
+				<li>Thursday:	8AM–4:30PM</li>
+				<li>Friday:	8AM–4:30PM</li>
+				<li>Saturday:	8AM–12PM</li>
+				<li>Sunday:	Closed</li>
 				</ul>
 			</ul><br>
-			<h1>Other Company</h1>
+			This information can be found at: <a href="https://www.uhaul.com/">U-Haul.com</a>
+		</div>
+		<div data-role="collapsible">
+			<h1>U-Pack</h1>
 			<ul>
-			<li>Address:</li>
-			<li>Phone:</li>
+			<li>Address: 2901 Benton Rd, Mt Vernon, IL 62864</li>
+			<li>Phone: 	(618) 242-4228</li>
 			<li>Hours:</li>
 				<ul>
-				<li>Monday</li>
-				<li>Tuesday</li>
-				<li>Wednesday</li>
-				<li>Thursday</li>
-				<li>Friday</li>
-				<li>Saturday</li>
-				<li>Sunday</li>
+				<li>Monday: 8am-4pm</li>
+				<li>Tuesday: 8am-4pm</li>
+				<li>Wednesday: 8am-4pm</li>
+				<li>Thursday: 8am-4pm</li>
+				<li>Friday: 8am-4pm</li>
+				<li>Saturday: By Appointment Only</li>
+				<li>Sunday: Closed</li>
 				</ul>
 			</ul><br>
-			</p>
-				
-		</div>
-		
+			This information can be found at: <a href="https://harlowmoving.com/">HarlowMoving.com</a>
+		</div>	
 	</div>
 	
 	<div data-role="footer" data-position="fixed" data-fullscreen="true">
-	<h4>Copyright Megacorp &copy; 2015</h4>
 	<div data-role="navbar">
 		<ul>
-			<li><a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a></li>
-			<li><a href="supplies.htm" data-transition="pop" rel="external">Previous</a></li> 
-			<li><a href="repairs.htm" data-transition="pop" rel="external">Next</a></li>
+			<li><a href="instructions.htm" data-prefetch="true" data-transition="pop" rel="external">Instructions</a></li>
+			<li><a href="supplies.htm" data-transition="pop" rel="external">Supplies</a></li>
+			<li><a href="notifications.htm" data-transition="pop" rel="external">Notifications</a></li>
+			<li><a href="repairs.htm" data-transition="pop" rel="external">Repairs</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Utilities</a></li>
+			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
 		</ul>
 	</div>
-	
+	<h4>Moving Helper &copy; 2020</h4>	
 </div>
 
 </body>

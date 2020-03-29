@@ -7,12 +7,12 @@ Title: Moving Planner
 Use: Supplies Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 3/13/2020
-Tested: 3/13/2020; Passed with no problems.
+Developed: 3/24/2020
+Tested: 3/24/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moving Supplies Page</title>
+<title>Moving Supplies</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -21,15 +21,19 @@ Tested: 3/13/2020; Passed with no problems.
 <body>
 
 
-<div data-role="page" id="suppliesPage" data-title="Moving Supplies Page">
+<div data-role="page" id="suppliesPage" data-title="Moving Supplies">
 
 
-	<div data-role="header"><h1>Moving Supplies Page</h1></div>
+	<div data-role="header">
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a>
+	<h1>Moving Supplies</h1>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a>
+	</div>
 
 	<div role="main" class="ui-content">
 	<p>
-	City of Flora and the county of Clay does not contain many moving companies. The sole company residing within
-	Clay county is as follows.
+	City of Flora and the surrounding counties do not contain many moving company options. Here are the two most local options
+	for moving companies.
 
 	<ul data-role="listview" data-inset="true">
 		<li data-role="list-divider">U-Haul</li>
@@ -39,36 +43,37 @@ Tested: 3/13/2020; Passed with no problems.
 		<li>Packing Boxes</li>
 		<li>Moving & Lifting tools</li>
 		<li>Ropes & tie-downs</li>
-		<li>Packing TApe</li>
+		<li>Packing Tape</li>
 		<li>Locks</li>
 		<li>Covers & Bags</li>
-		<li data-role="list-divider">Second Company (if there were one)</li>
-		<li>Supply1</li>
-		<li>Supply2</li>
-		<li>Supply3</li>
-		<li>Supply4</li>
+		<li data-role="list-divider">Harlow Moving & Storage, Inc.</li>
+		<li>Packers</li>
+		<li>Movers</li>
+		<li>Drivers</li>
+		<li>Boxes</li>
+		<li>Storage</li>
 	</ul>
 	</br>
-	This information can be found at <a href="https://www.uhaul.com/">U-Haul.com</a>.
+	This information can be found at:<br>
+	<ul>
+	<li><a href="https://www.uhaul.com/">U-Haul.com</a></li>
+	<li><a href="https://harlowmoving.com/">Harlow Moving.com</a></li>
+	</ul>
 	</p>
-	<br>
-	<p>
-	You can also <a href="#aboutPage">learn more</a> about Megacorp.
-	</p>
-	</div>
-	
-	
-	<div data-role="footer" data-position="fixed" data-fullscreen="true">
-	<h4>Copyright Megacorp &copy; 2015</h4>
-	<div data-role="navbar">
-		<ul>
-			<li><a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a></li>
-			<li><a href="instructions.htm" data-prefetch="true" data-transition="flip" rel="external">Previous</a></li>
-			<li><a href="companies.htm" data-transition="pop" rel="external">Next</a></li>
-		</ul>
 	</div>
 
-	
-</div>
+	<div data-role="footer" data-position="fixed" data-fullscreen="true">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="instructions.htm" data-prefetch="true" data-transition="pop" rel="external">Instructions</a></li>
+			<li><a href="Notifications.htm" data-transition="pop" rel="external">Notifications</a></li>
+			<li><a href="companies.htm" data-transition="pop" rel="external">Companies</a></li>
+			<li><a href="repairs.htm" data-transition="pop" rel="external">Repairs</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Utilities</a></li>
+			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
+		</ul>
+	</div>
+	<h4>Moving Helper &copy; 2020</h4>
+	</div>
 </body>
 </html>

@@ -105,5 +105,18 @@ $(window).bind("orientationchange", function(e, type) {
 	});
 </script>
 
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("sidenav").style.top = "0";
+  } else {
+    document.getElementById("sidenav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
 </body>
 </html>

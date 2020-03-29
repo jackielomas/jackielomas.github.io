@@ -7,12 +7,12 @@ Title: Moving Planner
 Use: Repairs Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
-Developed: 3/13/2020
-Tested: 3/13/2020; Passed with no problems.
+Developed: 3/24/2020
+Tested: 3/24/2020; Passed with no problems.
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Repairs and Cleaning Page</title>
+<title>Repairs and Cleaning</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -21,7 +21,7 @@ Tested: 3/13/2020; Passed with no problems.
 <body>
 
 
-<div data-role="page" id="repairsPage" data-title="Repairs and Cleaning Page">
+<div data-role="page" id="repairsPage" data-title="Repairs and Cleaning">
 
 	<!-- #3 Added hiding panel -->
 	<div data-role="panel" id="leftCleaningPanel" data-display="overlay">
@@ -43,7 +43,11 @@ Tested: 3/13/2020; Passed with no problems.
 		</p>
 	</div>
 
-	<div data-role="header"><h1>Repairs and Cleaning Page</h1></div>
+	<div data-role="header">
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a>
+	<h1>Moving Repairs & Cleaning</h1>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a>
+	</div>
 
 	<div role="main" class="ui-content">
 		<p>
@@ -68,14 +72,17 @@ Tested: 3/13/2020; Passed with no problems.
 	
 	
 	<div data-role="footer" data-position="fixed" data-fullscreen="true">
-	<h4>Copyright Megacorp &copy; 2015</h4>
 	<div data-role="navbar">
 		<ul>
-			<li><a href="index.htm" data-prefetch="true" data-transition="pop" rel="external">Home</a></li>
-			<li><a href="companies.htm" data-transition="pop" rel="external">Previous</a></li>
-			<li><a href="notifications.htm" data-transition="pop" rel="external">Next</a></li>
+			<li><a href="instructions.htm" data-prefetch="true" data-transition="pop" rel="external">Instructions</a></li>
+			<li><a href="supplies.htm" data-transition="pop" rel="external">Supplies</a></li>
+			<li><a href="companies.htm" data-transition="pop" rel="external">Companies</a></li>
+			<li><a href="notifications.htm" data-transition="pop" rel="external">Notifications</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Utilities</a></li>
+			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
 		</ul>
 	</div>
-
+	<h4>Moving Helper &copy; 2020</h4>
+</div>
 </body>
 </html>
