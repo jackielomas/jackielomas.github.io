@@ -11,6 +11,7 @@ Developed: 3/24/2020
 Tested: 3/24/2020; Passed with no problems.
 -->
 
+<!-- #3 Added theme roller to every page -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Utilities</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -33,7 +34,7 @@ Tested: 3/24/2020; Passed with no problems.
 	</div>
 
 	City of Flora contains all necessary utilities within one bill. Notifying City of Flora of a move will take care of all disconnection
-	needs for your residence. Below is a list of the different utilities that will be disconnected.</br>
+	needs for your residence. Below is a list of the different utilities that will be disconnected.<br>
 
 	<ol data-role="listview" data-inset="true">
 	<li data-role="list-divider">Utilities</li>
@@ -48,6 +49,12 @@ Tested: 3/24/2020; Passed with no problems.
 	</p>
 		
 	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="notifications.htm" data-transition="pop" rel="external">Previous</a></li>
+			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Next</a></li>
+		</ul>
+	</div><br>
 	<div data-role="navbar">
 		<ul>
 			<li><a href="instructions.htm" data-prefetch="true" data-transition="pop" rel="external">Instructions</a></li>
