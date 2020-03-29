@@ -14,6 +14,9 @@ Tested: 3/24/2020; Passed with no problems.
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home Page</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/movingPlannerTheme.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/themes/movingPlannerTheme.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -23,11 +26,11 @@ Tested: 3/24/2020; Passed with no problems.
 
 <div data-role="page" id="homePage" data-title="Home Page">
 
-
+	<!-- #2 Added icons to every page header for home, contact us, and about -->
 	<div data-role="header">
-	<a href="about.htm" data-prefetch="true" data-transition="pop" rel="external">About Us</a>
+	<a href="about.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="info" data-iconpos="left">About Us</a>
 	<h1>Welcome</h1>
-	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="mail" data-iconpos="left">Contact Us</a>
 	</div>
 
 	<div role="main" class="ui-content">
@@ -46,8 +49,9 @@ Tested: 3/24/2020; Passed with no problems.
 			<p>
 				<h2><u>Instructions</u></h2>
 				This web application has a very simplistic design so using it makes it a breeze. You can simply navigate throughout
-				the instruction pages my clicking "Next" or "Previous". Every page also has an option to return back to the home page.
-				You can also navigate to an "About Me" page or a "Contact Us" page.
+				the instruction pages by clicking which page you'd like to navigate to using the navigation buttons at the bottom of the
+				page. Every page also has an option to return back to the home page.
+				You can also navigate to an <a href="about.htm">About Me</a> page or a <a href="contact.htm">Contact Us</a> page.
 			</p>
 		</div>
 		</div>
