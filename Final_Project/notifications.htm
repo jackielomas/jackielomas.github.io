@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+Title: Moving Planner
+Use: Notifications Page
+Author: Jackie Lomas
+School/Term: SIUC, Spring 2020
+Developed: 3/24/2020
+Tested: 3/24/2020; Passed with no problems.
+-->
+
+<!-- #3 Added theme roller to every page -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notifications</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/movingPlannerTheme.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/themes/movingPlannerTheme.min.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+
+<div data-role="page" id="notificationsPage" data-title="Notifications">
+
+
+	<div data-role="header">
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
+	<h1>Notifications</h1>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="mail" data-iconpos="left">Contact Us</a>
+	</div>
+
+	<div role="main" class="ui-content">
+
+		<!-- #4 implement tab widget -->
+		<div data-role="tabs">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#tab1">Business</a></li>
+				<li><a href="#tab2">Personal</a></li>
+			</ul>
+			</div>
+			
+			<div id="tab1">
+				<p>
+				Professional/business locations that will need to be made aware of your moving:
+				<ul>
+				<li>Water facility</li>
+				<li>Gas facility</li>
+				<li>Garbage/Waste disposal</li>
+				<li>Electric Company</li>
+				<li>Telephone/cellphone company</li>
+				<li>Internet company</li>
+				<li>Source of income (employer, SSI, SSID, VA, etc.)</li>
+				<li>Any other bills (credit cards, loans, car payments, etc.)</li>
+				<li>Banks</li>
+				</ul>
+				</p>
+			</div>
+
+			<div id="tab2">
+				<p>
+				Personal contacts you may want to notify of your address change:
+				<ul>
+				<li>Parents</li>
+				<li>Children</li>
+				<li>Other family members</li>
+				<li>Emergency Contacts</li>
+				</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="repairs.htm" data-transition="pop" rel="external">Previous</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Next</a></li>
+		</ul>
+	</div><br>
+	<div data-role="navbar">
+		<ul>
+			<li><a href="instructions.htm" data-prefetch="true" data-transition="pop" rel="external">Instructions</a></li>
+			<li><a href="supplies.htm" data-transition="pop" rel="external">Supplies</a></li>
+			<li><a href="companies.htm" data-transition="pop" rel="external">Companies</a></li>
+			<li><a href="repairs.htm" data-transition="pop" rel="external">Repairs</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Utilities</a></li>
+			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
+		</ul>
+	</div>
+	<h4>Moving Helper &copy; 2020</h4>
+</div>
+</body>
+</html>

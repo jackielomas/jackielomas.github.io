@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+Title: Moving Planner
+Use: Display Page
+Author: Jackie Lomas
+School/Term: SIUC, Spring 2020
+Developed: 3/24/2020
+Tested: 3/24/2020; No errors.
+-->
+
+<!-- #3 Added theme roller to every page -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Display Items</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/movingPlannerTheme.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/themes/movingPlannerTheme.min.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/application.js"></script>
+</head>
+
+<body>
+
+
+<div data-role="page" id="displayPage" data-title="Display Items">
+
+
+	<div data-role="header">
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
+	<h1>Display Planner Items</h1>
+	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="mail" data-iconpos="left">Contact Us</a>
+	</div>
+
+	<div role="main" class="ui-content">
+	<p>
+	Here you will find a list of your schedule.<br>
+	
+	<ul id="notesList" data-role="listview" data-inset="true"></ul>
+	</p>
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="planner.htm" data-transition="pop" rel="external">Planner</a></li>
+			<li><a href="add.htm" data-prefetch="true" data-transition="pop" rel="external">Add Items</a></li>
+		</ul>
+	</div>
+	<h4>Moving Helper &copy; 2020</h4>
+</div>
+
+</body>
+</html>
