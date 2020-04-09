@@ -10,8 +10,8 @@ $(function(){
 			$note = $('#note'),
 			$ul = $('#notesList'),
 			li = '<li><a href="#pgNotesDetail?title=LINK">ID</a></li>',
-			notesHdr = '<li data-role="list-divider">Your Notes</li>',
-			noNotes = '<li id="noNotes">You have no notes</li>';
+			notesHdr = '<li data-role="list-divider">Your Reminders</li>',
+			noNotes = '<li id="noNotes">You have no reminders</li>';
 
 		app.init = function(){
 			app.bindings();

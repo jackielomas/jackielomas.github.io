@@ -4,7 +4,7 @@
 
 <!--
 Title: Moving Planner
-Use: Utilities Page
+Use: Notifications Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020
 Developed: 3/24/2020
@@ -13,7 +13,7 @@ Tested: 3/24/2020; Passed with no problems.
 
 <!-- #3 Added theme roller to every page -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Utilities</title>
+<title>Notifications</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" href="css/themes/movingPlannerTheme.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
@@ -25,34 +25,63 @@ Tested: 3/24/2020; Passed with no problems.
 <body>
 
 
-<div data-role="page" id="utilitiesPage" data-title="Utilities">
+<div data-role="page" id="notificationsPage" data-title="Notifications">
+
 
 	<div data-role="header">
 	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
-	<h1>Utilities</h1>
+	<h1>Notifications</h1>
 	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="mail" data-iconpos="left">Contact Us</a>
 	</div>
 
-	City of Flora contains all necessary utilities within one bill. Notifying City of Flora of a move will take care of all disconnection
-	needs for your residence. Below is a list of the different utilities that will be disconnected.<br>
+	<div role="main" class="ui-content">
 
-	<ol data-role="listview" data-inset="true">
-	<li data-role="list-divider">Utilities</li>
-		<li>Electric</li>
-		<li>Trash</li>
-		<li>Water</li>
-		<li>Trash & Sewage</li>
-		<li>Natural Gas</li>
-	</ol>
-	<br>
-	This information can be found at <a href="https://florail.govoffice2.com/?SEC=306673AF-BCCC-459B-A624-F1FE60FC611F">City of Flora</a>.
-	</p>
-		
+		<!-- #4 implement tab widget -->
+		<div data-role="tabs">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#tab1">Business</a></li>
+				<li><a href="#tab2">Personal</a></li>
+			</ul>
+			</div>
+			
+			<div id="tab1">
+				<p>
+				Professional/business locations that will need to be made aware of your moving:
+				<ul>
+				<li>Water facility</li>
+				<li>Gas facility</li>
+				<li>Garbage/Waste disposal</li>
+				<li>Electric Company</li>
+				<li>Telephone/cellphone company</li>
+				<li>Internet company</li>
+				<li>Source of income (employer, SSI, SSID, VA, etc.)</li>
+				<li>Any other bills (credit cards, loans, car payments, etc.)</li>
+				<li>Banks</li>
+				</ul>
+				</p>
+			</div>
+
+			<div id="tab2">
+				<p>
+				Personal contacts you may want to notify of your address change:
+				<ul>
+				<li>Parents</li>
+				<li>Children</li>
+				<li>Other family members</li>
+				<li>Emergency Contacts</li>
+				</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	
 	<div data-role="footer" data-position="fixed">
 	<div data-role="navbar">
 		<ul>
-			<li><a href="notifications.htm" data-transition="pop" rel="external">Previous</a></li>
-			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Next</a></li>
+			<li><a href="repairs.htm" data-transition="pop" rel="external">Previous</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Next</a></li>
 		</ul>
 	</div><br>
 	<div data-role="navbar">
@@ -61,12 +90,11 @@ Tested: 3/24/2020; Passed with no problems.
 			<li><a href="supplies.htm" data-transition="pop" rel="external">Supplies</a></li>
 			<li><a href="companies.htm" data-transition="pop" rel="external">Companies</a></li>
 			<li><a href="repairs.htm" data-transition="pop" rel="external">Repairs</a></li>
-			<li><a href="notifications.htm" data-transition="pop" rel="external">Notifications</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Utilities</a></li>
 			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
 		</ul>
 	</div>
-	<h4>Moving Helper &copy; 2020</h4>
+	<h4>Cool Kidz Music &copy; 2020</h4>
 </div>
-
 </body>
 </html>

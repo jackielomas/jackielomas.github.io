@@ -4,25 +4,24 @@
 
 <!--
 Title: Cool Kidz Music
-Use: Home Page
+Use: Music Logger Page
 Author: Jackie Lomas
 School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 -->
 
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home Page</title>
+<title>Music Logger</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/application.js"></script>
 </head>
 
 <body>
 
 
-<div data-role="page" id="homePage" data-title="Home Page">
+<div data-role="page" id="musicLoggerPage" data-title="Music Logger">
 
 	<!-- Data for left navigation bar -->
 	<div data-role="panel" id="leftNavPanel" data-display="overlay">
@@ -44,40 +43,32 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 
 	<!-- Header Bar information -->
 	<div data-role="header">
-	<a href="about.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="info" data-iconpos="left">About Us</a>
-	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="mail" data-iconpos="left">Contact Us</a>
-	<h1>Welcome</h1>
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
+	<h1>Display Planner Items</h1>
 	<a href="#leftNavPanel" data-role="button">Navigation</a>
 	</div>
 
 	<div role="main" class="ui-content">
 	
 	<!-- Page Content -->
-	<div class="ui-grid-a">
-		<div class="ui-block-a">
-		<p>
-		<h2><u>Header One</u></h2>
-		Here is information one
-		</p>
-		</div>
-		<div class="ui-block-b">
-			<p>
-				<h2><u>Header Two</u></h2>
-				Here is information two
-			</p>
-		</div>
-		</div>
+	
+	<p>
+	Here you will find a list of your schedule.<br>
+	
+	<ul id="notesList" data-role="listview" data-inset="true"></ul>
+	</p>
 	</div>
 	
-	<!-- Footer information -->
+	<!-- Footer information -->	
 	<div data-role="footer" data-position="fixed">
 	<div data-role="navbar">
 		<ul>
-			<li><a href="songs.htm" data-prefetch="true" data-transition="flip" rel="external">Top Songs</a></li>
+			<li><a href="index.htm" data-prefetch="true" data-transition="flip" rel="external">Home</a></li>
 			<li><a href="musicKeeper.htm" data-prefetch="true" data-transition="pop" rel="external">Music Keeper</a></li>
 		</ul>
 	</div>
-	<h4>Cool Kidz Music &copy; 2020</h4>	
+	<h4>Cool Kidz Music &copy; 2020</h4>
 </div>
+
 </body>
 </html>

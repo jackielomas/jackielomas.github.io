@@ -11,7 +11,7 @@ Developed: 3/24/2020
 Tested: 3/24/2020; Passed with no problems.
 -->
 
-<!-- #3 Added theme roller to every page -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Repairs and Cleaning</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -28,19 +28,16 @@ Tested: 3/24/2020; Passed with no problems.
 <div data-role="page" id="repairsPage" data-title="Repairs and Cleaning">
 
 	<!-- #3 Added hiding panel -->
-	<div data-role="panel" id="leftCleaningPanel" data-display="overlay">
+	<div data-role="panel" id="leftNavPanel" data-display="overlay">
 		<p>
-		<ol><h2>Cleaning List</h2>
-		<li>Wipe down all surfaces (walls, baseboards, molding, doors, etc)</li>
-		<li>Wipe down all kitchen cabinets (inside, outside, & top) & drawers</li>
-		<li>Ensure stove and oven are cleaned</li>
-		<li>Clean all bathrooms (sink, mirrors, tub, etc.)</li>
-		<li>Wipe down washer & dryer (inside & outside)</li>
-		<li>Make sure air intake vent is cleaned and filter replaced</li>
-		<li>Vaccum carpet and/or sweep & mop floors</li>
-		<li>Ensure all belongings and trash are removed from location</li>
-		<li>Check to ensure outside premises is acceptable (yard mowed if required, no trash in yard, etc.)</li>
-		</ol>
+		<ul><h2>Navigation</h2>
+			<li><a href="instructions.htm" data-prefetch="true" data-transition="pop" rel="external">Instructions</a></li>
+			<li><a href="supplies.htm" data-transition="pop" rel="external">Supplies</a></li>
+			<li><a href="companies.htm" data-transition="pop" rel="external">Companies</a></li>
+			<li><a href="notifications.htm" data-transition="pop" rel="external">Notifications</a></li>
+			<li><a href="utilities.htm" data-transition="pop" rel="external">Utilities</a></li>
+			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
+		</ul>
 		
 		<p>
 			<a data-role="button" data-rel="close">Close</a>
@@ -48,7 +45,7 @@ Tested: 3/24/2020; Passed with no problems.
 	</div>
 
 	<div data-role="header">
-	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
+	<a href="#leftNavPanel" data-role="button">Navigation</a>
 	<h1>Moving Repairs & Cleaning</h1>
 	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="mail" data-iconpos="left">Contact Us</a>
 	</div>
@@ -92,7 +89,7 @@ Tested: 3/24/2020; Passed with no problems.
 			<li><a href="schedule.htm" data-prefetch="true" data-transition="pop" rel="external">Schedule</a></li>
 		</ul>
 	</div>
-	<h4>Moving Helper &copy; 2020</h4>
+	<h4>Cool Kidz Music &copy; 2020</h4>
 </div>
 </body>
 </html>
