@@ -10,7 +10,7 @@ $(function(){
 			$note = $('#note'),
 			$ul = $('#notesList'),
 			li = '<li><a href="#pgNotesDetail?title=LINK">ID</a></li>',
-			notesHdr = '<li data-role="list-divider">Your Reminders</li>',
+			notesHdr = '<li data-role="list-divider">Your Music Reminders</li>',
 			noNotes = '<li id="noNotes">You have no reminders</li>';
 
 		app.init = function(){
@@ -111,7 +111,7 @@ $(function(){
 			// write it back to localStorage
 			localStorage['Notekeeper'] = JSON.stringify(notesObj);
 			// return to the list of notes
-			$.mobile.changePage('add.htm');
+			$.mobile.changePage('musicKeeper.htm');
 			// restart the storage check
 			app.checkForStorage();
 		};
