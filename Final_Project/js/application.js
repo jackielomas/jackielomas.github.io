@@ -48,7 +48,7 @@ $(function(){
 				note = notes[title],
 				page = ['<div data-role="page">',
 							'<div data-role="header" data-add-back-btn="true">',
-								'<h1>Notekeeper</h1>',
+								'<h1>Music Logger</h1>',
 								'<a id="btnDelete" href="" data-href="ID" data-role="button" class="ui-btn-right">Delete</a>',
 							'</div>',
 							'<div role="main" class="ui-content"><h3>TITLE</h3><p>NOTE</p></div>',
