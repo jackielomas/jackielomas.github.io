@@ -111,7 +111,7 @@ $(function(){
 			// write it back to localStorage
 			localStorage['Notekeeper'] = JSON.stringify(notesObj);
 			// return to the list of notes
-			$.mobile.changePage('musicKeeper.htm');
+			$.mobile.changePage('musicLogger.htm');
 			// restart the storage check
 			app.checkForStorage();
 		};
