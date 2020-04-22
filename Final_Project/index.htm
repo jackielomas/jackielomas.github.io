@@ -14,9 +14,9 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home Page</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<link rel="stylesheet" href="css/themes/themeRoller.css" />
+<link rel="stylesheet" href="css/themes/themeRoller2.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="css/themes/themeRoller.min.css" />
+<link rel="stylesheet" href="css/themes/themeRoller2.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -29,7 +29,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<!-- Data for left navigation bar -->
 	<div data-role="panel" id="leftNavPanel" data-display="overlay">
 		<p>
-		<ul><h2>Navigation</h2>
+		<ul><h2><u>Navigation</u></h2>
 			<li><a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a></li>
 			<li><a href="about.htm" data-transition="pop" rel="external">About Cool Kidz</a></li>
 			<li><a href="songs.htm" data-transition="pop" rel="external">Top Songs</a></li>
@@ -46,10 +46,9 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 
 	<!-- Header Bar information -->
 	<div data-role="header">
+	<a href="#leftNavPanel" data-role="button" data-icon="navigation">Navigation</a>
+	<center><u><font size="18">Welcome To Cool Kidz Music</font></u></center>
 	<a href="about.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="info" data-iconpos="left">About Us</a>
-	<a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="mail" data-iconpos="left">Contact Us</a>
-	<h1>Welcome</h1>
-	<a href="#leftNavPanel" data-role="button">Navigation</a>
 	</div>
 
 	<div role="main" class="ui-content">
@@ -57,15 +56,23 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<!-- Page Content -->
 	<div class="ui-grid-a">
 		<div class="ui-block-a">
-		<p>
-		<h2><u>Header One</u></h2>
-		Here is information one
-		</p>
+			<p>
+			<h2><u>Welcome</u></h2>
+			Welcome, all you cool kiddiez! Here is your one stop location for finding all information about the latest
+			and great music hitting the top charts today.
+			</p>
 		</div>
 		<div class="ui-block-b">
 			<p>
-				<h2><u>Header Two</u></h2>
-				Here is information two
+			<h2><u>How To Use</u></h2>
+			Within this site you can find the top songs and artists of a variety of genres. You can also
+			find the top and trending videos. You can simply move from page to page via the bottom of the page
+			with the navigation or you can simply use the navigation button at the top of the page to get directly
+			where you're going.
+			<br><br>
+			This page also allows you to keep track of any cool music or artists you happen upon by writing it down
+			in the MusicKeeper. You can simply jot yourself a little note and come back to the MusicLogger at a later
+			time to help jog your memory.
 			</p>
 		</div>
 		</div>

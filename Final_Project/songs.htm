@@ -13,9 +13,9 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Top Songs</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<link rel="stylesheet" href="css/themes/themeRoller.css" />
+<link rel="stylesheet" href="css/themes/themeRoller2.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="css/themes/themeRoller.min.css" />
+<link rel="stylesheet" href="css/themes/themeRoller2.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -28,7 +28,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<!-- Data for left navigation bar -->
 	<div data-role="panel" id="leftNavPanel" data-display="overlay">
 		<p>
-		<ul><h2>Navigation</h2>
+		<ul><h2><u>Navigation</u></h2>
 			<li><a href="contact.htm" data-prefetch="true" data-transition="pop" rel="external">Contact Us</a></li>
 			<li><a href="about.htm" data-transition="pop" rel="external">About Cool Kidz</a></li>
 			<li><a href="songs.htm" data-transition="pop" rel="external">Top Songs</a></li>
@@ -47,70 +47,215 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<div data-role="header">
 	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
 	<h1>Top Songs</h1>
-	<a href="#leftNavPanel" data-role="button">Navigation</a>
+	<a href="#leftNavPanel" data-role="button" data-icon="navigation">Navigation</a>
 	</div>
 
 	<div role="main" class="ui-content">
 	
 	<!-- Page Content -->
 	
-		<div data-role="collapsible"><p style="color:black">
+		<div data-role="collapsible">
 			<h3>Pop</h3>
-			<p><font color=black>
-			<ul>
-			<li>Address:551 E North Ave, Flora, IL 62839</li>
-			<li>Phone: (618) 662-8148</li>
-			<li>Hours:</li>
-				<ul>
-				<li>Monday:	8AM–4:30PM</li>
-				<li>Tuesday:	8AM–4:30PM</li>
-				<li>Wednesday:	Closed</li>
-				<li>Thursday:	8AM–4:30PM</li>
-				<li>Friday:	8AM–4:30PM</li>
-				<li>Saturday:	8AM–12PM</li>
-				<li>Sunday:	Closed</li>
-				</ul>
-			</ul><br>
-			This information can be found at: <a href="https://www.uhaul.com/">U-Haul.com</a></p></font>
+			<p>
+			<table id="table1" data-mode="reflow">
+						<thead align="center">
+							<tr>
+								<th><u>Number</u></th>
+								<th><u>Title</u></th>
+								<th><u>Artist</u></th>
+							</tr>
+						</thead>
+						<tbody align="center">
+							<tr>
+								<td>1.</td>
+								<td>Blinding Lights</td>
+								<td>The Weeknd</td>
+							</tr>		
+							<tr>
+								<td>2.</td>
+								<td>My Oh My</td>
+								<td>Camilla Cabella feat. DaBaby</td>
+							</tr>		
+							<tr>
+								<td>3.</td>
+								<td>Adore You</td>
+								<td>Harry Styles</td>
+							</tr>		
+							<tr>
+								<td>4.</td>
+								<td>Don't Start Now</td>
+								<td>Dua Lipa</td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td>Say So</td>
+								<td>Doja Cat</td>
+							</tr>
+							<tr>
+								<td>6.</td>
+								<td>everything i wanted</td>
+								<td>Billie Eilish</td>
+							</tr>
+							<tr>
+								<td>7.</td>
+								<td>Intentions</td>
+								<td>Justin Bieber feat. Quavo</td>
+							</tr>
+							<tr>
+								<td>8.</td>
+								<td>Hot Girl Bummer</td>
+								<td>blackbear</td>
+							</tr>
+							<tr>
+								<td>9.</td>
+								<td>Circles</td>
+								<td>Post Malone</td>
+							</tr>
+							<tr>
+								<td>10.</td>
+								<td>RITMO (Bad Boys For Life)</td>
+								<td>The Black Eyed Peas X J Balvin</td>
+							</tr>							
+						</tbody>
+					</table>
+			<br>
+			This information can be found at: <a href="https://www.billboard.com/charts/pop-songs">Billboard.com/charts/pop-songs</a></p>
 		</div>
 		<div data-role="collapsible">
 			<h3>Rock</h3>
-			<p><font color=black>
-			<ul>
-			<li>Address: 2901 Benton Rd, Mt Vernon, IL 62864</li>
-			<li>Phone: 	(618) 242-4228</li>
-			<li>Hours:</li>
-				<ul>
-				<li>Monday: 8am-4pm</li>
-				<li>Tuesday: 8am-4pm</li>
-				<li>Wednesday: 8am-4pm</li>
-				<li>Thursday: 8am-4pm</li>
-				<li>Friday: 8am-4pm</li>
-				<li>Saturday: By Appointment Only</li>
-				<li>Sunday: Closed</li>
-				</ul>
-			</ul><br>
-			This information can be found at: <a href="https://harlowmoving.com/">HarlowMoving.com</a></p></font>
-		</div>	
+			<p>
+			<table id="table1" data-mode="reflow">
+						<thead align="center">
+							<tr>
+								<th><u>Number</u></th>
+								<th><u>Title</u></th>
+								<th><u>Artist</u></th>
+							</tr>
+						</thead>
+						<tbody align="center">
+							<tr>
+								<td>1.</td>
+								<td>Level of Concern</td>
+								<td>twenty one pilots</td>
+							</tr>		
+							<tr>
+								<td>2.</td>
+								<td>High Hopes</td>
+								<td>Panic! At The Disco</td>
+							</tr>		
+							<tr>
+								<td>3.</td>
+								<td>Bank!</td>
+								<td>AJR</td>
+							</tr>		
+							<tr>
+								<td>4.</td>
+								<td>I Just Wanna Shine</td>
+								<td>Fitz And The Tantrums</td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td>Caution</td>
+								<td>The Killers</td>
+							</tr>
+							<tr>
+								<td>6.</td>
+								<td>Bad Decisions</td>
+								<td>The Strokes</td>
+							</tr>
+							<tr>
+								<td>7.</td>
+								<td>Brooklyn Bridge To Chorus</td>
+								<td>The Strokes</td>
+							</tr>
+							<tr>
+								<td>8.</td>
+								<td>The Adults Are Talking</td>
+								<td>The Strokes</td>
+							</tr>
+							<tr>
+								<td>9.</td>
+								<td>Let Me Down</td>
+								<td>Oliver Tree</td>
+							</tr>
+							<tr>
+								<td>10.</td>
+								<td>Popular Monster</td>
+								<td>Falling In Reverse</td>
+							</tr>							
+						</tbody>
+					</table>
+			<br>
+			This information can be found at: <a href="https://www.billboard.com/charts/rock-songs">Billboard.com/charts/rock-songs</a></p>
+		</div>
 		<div data-role="collapsible">
 			<h3>Country</h3>
-			<p><font color=black>
-			<ul>
-			<li>Address: 2901 Benton Rd, Mt Vernon, IL 62864</li>
-			<li>Phone: 	(618) 242-4228</li>
-			<li>Hours:</li>
-				<ul>
-				<li>Monday: 8am-4pm</li>
-				<li>Tuesday: 8am-4pm</li>
-				<li>Wednesday: 8am-4pm</li>
-				<li>Thursday: 8am-4pm</li>
-				<li>Friday: 8am-4pm</li>
-				<li>Saturday: By Appointment Only</li>
-				<li>Sunday: Closed</li>
-				</ul>
-			</ul><br>
-			This information can be found at: <a href="https://harlowmoving.com/">HarlowMoving.com</a></p></font>
-		</div>	
+			<p>
+			<table id="table1" data-mode="reflow">
+						<thead align="center">
+							<tr>
+								<th><u>Number</u></th>
+								<th><u>Title</u></th>
+								<th><u>Artist</u></th>
+							</tr>
+						</thead>
+						<tbody align="center">
+						
+							<tr>
+								<td>1.</td>
+								<td>The Bones</td>
+								<td>Maren Morris</td>
+							</tr>		
+							<tr>
+								<td>2.</td>
+								<td>I Hope</td>
+								<td>Gabby Barrett</td>
+							</tr>		
+							<tr>
+								<td>3.</td>
+								<td>Nobody But You</td>
+								<td>Blake Shelton w/ Gwen Stefani</td>
+							</tr>		
+							<tr>
+								<td>4.</td>
+								<td>Chasin' You</td>
+								<td>Morgan Wallen</td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td>More Hearts Than Mine</td>
+								<td>Ingrid Andress</td>
+							</tr>
+							<tr>
+								<td>6.</td>
+								<td>10,000 Hours</td>
+								<td>Dan + Shay & Justin Bieber</td>
+							</tr>
+							<tr>
+								<td>7.</td>
+								<td>Catch</td>
+								<td>Brett Young</td>
+							</tr>
+							<tr>
+								<td>8.</td>
+								<td>I Hope You're Happy Now</td>
+								<td>Carly Pearce & Lee Brice</td>
+							</tr>
+							<tr>
+								<td>9.</td>
+								<td>Beer Can't Fix</td>
+								<td>Thomas Rhett Featuring Jon Pardi</td>
+							</tr>
+							<tr>
+								<td>10.</td>
+								<td>Does To Me</td>
+								<td>Luke Combs feat. Eric Church</td>
+							</tr>							
+						</tbody>
+					</table>
+			<br>
+			This information can be found at: <a href="https://www.billboard.com/charts/country-songs">Billboard.com/charts/country-songs</a></p>
+		</div>		
 	</div>
 	
 	<!-- Footer information -->
