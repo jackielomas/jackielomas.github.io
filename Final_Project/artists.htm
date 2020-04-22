@@ -44,16 +44,30 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 
 	<!-- Header Bar information -->
 	<div data-role="header">
-	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
-	<h1>Top Artists</h1>
 	<a href="#leftNavPanel" data-role="button" data-icon="navigation">Navigation</a>
+	<h1>Top Artists</h1>
+	<a href="index.htm" data-prefetch="true" data-transition="pop" rel="external" data-icon="home" data-iconpos="left">Home</a>
 	</div>
 	
 	<div role="main" class="ui-content">
 	
 	<!-- Page Content -->	
 
-	Information
+	<ol data-role="listview" data-inset="true">
+		<li data-role="list-divider">Top Artists <span class="ui-li-count">10</span></li>
+		<li>The Weeknd</li>
+		<li>Billie Eilish</li>
+		<li>Drake</li>
+		<li>Post Malone</li>
+		<li>The Strokes</li>
+		<li>Luke Combs</li>
+		<li>Dua Lipa</li>
+		<li>Roddy Ricch</li>
+		<li>John Prine</li>
+		<li>BTS</li>
+	</ol>
+	
+	This information can be found at: <a href="https://www.billboard.com/charts/artist-100">Billboard.com/charts/artist-100</a></p>
 		
 	<!-- Footer information -->
 	<div data-role="footer" data-position="fixed">
