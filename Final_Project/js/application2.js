@@ -50,7 +50,7 @@ $.mobile.changePage(href, {transition: 'slide'});
 };
 
 app.Notesbindings = function(){
-$(document).on('click', '#pgNoteList a', function(e){
+$(document).on('click', '#notesList a', function(e){
 e.preventDefault();
 e.stopImmediatePropagation();
 var href = $(this)[0].href.match(/\?.*$/)[0];
@@ -267,7 +267,7 @@ for (n in NotesObj){
 var nLnk = n.replace(/-/g,' ');
 html += NoteLi.replace(/ID/g,nLnk).replace(/LINK/g,n);
 }
-$('#pgNoteList').html(NoteHdr + html).listview('refresh');
+$('#notesList').html(NoteHdr + html).listview('refresh');
 };
 
 app.checkForNotesStorage = function(){
@@ -278,7 +278,7 @@ if (!$.isEmptyObject(NotesObj)) {
 app.displayNotes();
 } else {
 // nope, just show the placeholder
-$('#pgNoteList').html(NoteHdr + noNote).listview('refresh');
+$('#notesList').html(NoteHdr + noNote).listview('refresh');
 }
 };
 
