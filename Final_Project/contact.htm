@@ -113,5 +113,13 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<h4>Cool Kidz Music &copy; 2020</h4>
 </div>
 
+<script>
+
+$(document).bind("pagecontainerbeforeload pagecontainerload pagecontainerloadfailed pagecontainerbeforechange pagecontainerchange pagecontainerchangefailed pagecontainerbeforeshow pagecontainerbeforehide pagecontainershow pagecontainerhide pagebeforecreate pagecreate pageremove updatelayout", function(e) {
+	console.log(e.type);
+});
+
+</script>
+
 </body>
 </html>
