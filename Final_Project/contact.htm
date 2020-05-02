@@ -13,6 +13,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 <!--Requirement b - Page Title -->
 <title>Contact Us</title>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<!--Requirement l - Use of custom theme roller -->
 <link rel="stylesheet" href="css/themes/themeRoller2.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="css/themes/themeRoller2.min.css" />
@@ -29,6 +30,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<div data-role="panel" id="leftNavPanel" data-display="overlay">
 		<p>
 		<!--Requirement c - Pre-fecthed content -->
+		<!-- Requirement i - Added widget: panel -->
 		<ul><h2><u>Navigation</u></h2>
 			<li><a href="contact.htm" data-prefetch="true" data-transition="flow" rel="external">Contact Us</a></li>
 			<li><a href="about.htm" data-prefetch="true" data-transition="flow" rel="external">About Cool Kidz</a></li>
@@ -45,7 +47,9 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	</div>
 
 	<!--Requirement c - Pre-fecthed content -->
-	<!-- Header Bar information -->
+	<!--Requirement d - page transition -->
+	<!-- Header Bar information  -- Requirement e - Header -->
+	<!--Requirement k - Use of icons on buttons -->
 	<div data-role="header">
 		<a href="#leftNavPanel" data-role="button" data-icon="navigation">Navigation</a>
 		<h1><u>Contact Us</u></h1>
@@ -58,6 +62,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	
 	<p>
 
+		<!--Requirement h - Form with text, textarea, radio button, slider, select menu -->
 		<form action="echo.html" method="post">
 		
 			<div class="ui-field-contain">
@@ -71,6 +76,15 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 			<div class="ui-field-contain">
 				<label for="message">Message</label>
 				<textarea name="message" id="message"></textarea>
+			</div>
+			<div class="ui-field-contain">
+				<label for="favgenre">Favorite Genre:</label>
+				<select name="favgenre" id=favgenre">
+					<option value="Pop">Pop</option>
+					<option value="Rock">Rock</option>
+					<option value="Country">Country</option>
+					<option value="Other">Other</option>
+				</select>
 			</div>
 			<div class="ui-field-contain">
 				<label for="something">Rating</label>
@@ -95,7 +109,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 		</form>
 	</p>
 	
-	<!-- #7 Added pop up -->
+		<!-- Requirement i - Added widget: pop up -->
 		<a href="#instructionPopup" data-role="button" data-rel="popup" data-position-to="window">Instructions</a>
 	</div>
 	
@@ -105,11 +119,12 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
     <a href="" data-rel="back" data-theme="b" data-role="button">Close</a>
 	</div>
 	
-	<!-- Footer information -->
+	<!-- Footer information  --  Requirement e - Footer -->
 	<div data-role="footer" data-position="fixed">
+	<!-- Requirement f - Navbar & button -->
 	<div data-role="navbar">
 		<ul>
-			<li><a href="index.htm" data-prefetch="true" data-transition="flow" rel="external">Home</a></li>
+			<li><a href="index.htm" class="ui-btn-active" data-prefetch="true" data-transition="flow" rel="external">Home</a></li>
 			<li><a href="about.htm" data-prefetch="true" data-transition="flow" rel="external">About Cool Kidz</a></li>
 		</ul>
 	</div>

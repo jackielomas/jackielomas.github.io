@@ -13,6 +13,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 <!--Requirement b - Page Title -->
 <title>Top Artists</title>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<!--Requirement l - Use of custom theme roller -->
 <link rel="stylesheet" href="css/themes/themeRoller2.css" />
 <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="css/themes/themeRoller2.min.css" />
@@ -29,6 +30,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<div data-role="panel" id="leftNavPanel" data-display="overlay">
 		<p>
 		<!--Requirement c - Pre-fecthed content -->
+		<!-- Requirement i - Added widget: panel -->
 		<ul><h2><u>Navigation</u></h2>
 			<li><a href="contact.htm" data-prefetch="true" data-transition="flow" rel="external">Contact Us</a></li>
 			<li><a href="about.htm" data-prefetch="true" data-transition="flow" rel="external">About Cool Kidz</a></li>
@@ -44,7 +46,9 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 		</p>
 	</div>
 	<!--Requirement c - Pre-fecthed content -->
-	<!-- Header Bar information -->
+	<!--Requirement d - page transition -->
+	<!-- Header Bar information  -- Requirement e - Header -->
+	<!--Requirement k - Use of icons on buttons -->
 	<div data-role="header">
 	<a href="#leftNavPanel" data-role="button" data-icon="navigation">Navigation</a>
 	<h1><u>Top Artists</u></h1>
@@ -56,6 +60,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<!-- Page Content -->	
 
 	<ol data-role="listview" data-inset="true">
+		<!--Requirement g - list with count bubble -->
 		<li data-role="list-divider">Top Artists <span class="ui-li-count">10</span></li>
 		<li>The Weeknd</li>
 		<li>Billie Eilish</li>
@@ -71,12 +76,13 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	
 	This information can be found at: <a href="https://www.billboard.com/charts/artist-100">Billboard.com/charts/artist-100</a></p>
 		
-	<!-- Footer information -->
+	<!-- Footer information  --  Requirement e - Footer -->
 	<div data-role="footer" data-position="fixed">
+	<!-- Requirement f - Navbar & button -->
 	<div data-role="navbar">
 		<ul>
 			<li><a href="songs.htm" data-prefetch="true" data-transition="flow" rel="external">Top Songs</a></li>
-			<li><a href="videos.htm" data-prefetch="true" data-transition="flow" rel="external">Top Music Videos</a></li>
+			<li><a href="videos.htm" class="ui-btn-active" data-prefetch="true" data-transition="flow" rel="external">Top Music Videos</a></li>
 		</ul>
 	</div>
 	<h4>Cool Kidz Music &copy; 2020</h4>
