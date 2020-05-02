@@ -10,6 +10,7 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Requirement b - Page Title -->
 <title>Contact Us</title>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" href="css/themes/themeRoller2.css" />
@@ -27,12 +28,13 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 	<!-- Data for left navigation bar -->
 	<div data-role="panel" id="leftNavPanel" data-display="overlay">
 		<p>
+		<!--Requirement c - Pre-fecthed content -->
 		<ul><h2><u>Navigation</u></h2>
 			<li><a href="contact.htm" data-prefetch="true" data-transition="flow" rel="external">Contact Us</a></li>
-			<li><a href="about.htm" data-transition="flow" rel="external">About Cool Kidz</a></li>
-			<li><a href="songs.htm" data-transition="flow" rel="external">Top Songs</a></li>
-			<li><a href="artists.htm" data-transition="flow" rel="external">Top Artists</a></li>
-			<li><a href="videos.htm" data-transition="flow" rel="external">Top Music Videos</a></li>
+			<li><a href="about.htm" data-prefetch="true" data-transition="flow" rel="external">About Cool Kidz</a></li>
+			<li><a href="songs.htm" data-prefetch="true" data-transition="flow" rel="external">Top Songs</a></li>
+			<li><a href="artists.htm" data-prefetch="true" data-transition="flow" rel="external">Top Artists</a></li>
+			<li><a href="videos.htm" data-prefetch="true" data-transition="flow" rel="external">Top Music Videos</a></li>
 			<li><a href="musicKeeper.htm" data-prefetch="true" data-transition="flow" rel="external">Music Keeper</a></li>
 			<li><a href="musicKeeper.htm" data-prefetch="true" data-transition="flow" rel="external">Music Logger</a></li>
 		</ul>
@@ -42,11 +44,12 @@ School/Term: SIUC, Spring 2020, IST412-940 Mobile Web Application
 		</p>
 	</div>
 
+	<!--Requirement c - Pre-fecthed content -->
 	<!-- Header Bar information -->
 	<div data-role="header">
-		<a href="index.htm" data-prefetch="true" data-transition="flow" rel="external" data-icon="home" data-iconpos="left">Home</a>
-		<h1><u>Contact Us</u></h1>
 		<a href="#leftNavPanel" data-role="button" data-icon="navigation">Navigation</a>
+		<h1><u>Contact Us</u></h1>
+		<a href="index.htm" data-prefetch="true" data-transition="flow" rel="external" data-icon="home" data-iconpos="left">Home</a>
 	</div>
 
 	<div role="main" class="ui-content">
